@@ -44,8 +44,9 @@ int main(int argc, char *argV[]) {
     int i;
     int array[size];
     for(i = 0; i < size; i ++){
-        array[i] = atoi(argV[i]);
+        array[i] = atoi(argV[i + 2]);
     }
     selectionSort(array, size);
+    printf("%d\n%d\n", argc, size);
     return 0;
 }
